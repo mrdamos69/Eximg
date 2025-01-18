@@ -2,7 +2,18 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-//#include "MainController.h"
+#include <QFileSystemModel>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QJsonObject>
+#include <QJsonDocument>
+#include <QJsonArray>
+#include <QProgressBar>
+#include <QTreeView>
+#include <QComboBox>
+#include <QLineEdit>
+#include <QPlainTextEdit>
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -13,11 +24,26 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void onBrowseFolderClicked();
+    void onFileSelected(const QModelIndex &index);
+    void onGenerateMetadataClicked();
+    void onSaveSettingsClicked();
+    void sendImageToApi(const QString &filePath);
+    void onApiResponseReceived(QNetworkReply *reply);
+    void updateProgressBar(int value);
+
 private:
-    Ui::MainWindow *ui;private:
-   // MainController *controller;
+    Ui::MainWindow *ui;
+    QFileSystemModel *fileModel;
+    QNetworkAccessManager *networkManager;
+    QString currentFilePath; // Хранение пути к выбранному файлу
+
+    QString currentApiKey;          // Хранение текущего API-ключа
+    QString currentAiProvider;      // Хранение текущего провайдера (Gemini AI или OpenAI)
 };
+
 #endif // MAINWINDOW_H
