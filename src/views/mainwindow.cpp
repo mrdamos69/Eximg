@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "settingsdialog.h"
 #include <QTimer>
 #include <QFile>
 #include <QMessageBox>
@@ -14,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
     , fileModel(new QFileSystemModel(this))
     , networkManager(new QNetworkAccessManager(this))
+    , settingsDialog(new SettingsDialog(this)) // Инициализация окна настроек
 {
     ui->setupUi(this);
 
@@ -30,15 +32,14 @@ MainWindow::MainWindow(QWidget *parent)
     ui->progressBar->setVisible(false);
 
     // Установка значений по умолчанию
-    ui->aiProviderComboBox->setCurrentIndex(0); // Gemini AI по умолчанию
     currentAiProvider = "Gemini AI";
-    currentApiKey = ""; // Установить ваш ключ по умолчанию, если нужно
+    currentApiKey = "";
 
     // Подключение сигналов
     connect(ui->browseFolderButton, &QPushButton::clicked, this, &MainWindow::onBrowseFolderClicked);
     connect(ui->fileTreeView, &QTreeView::clicked, this, &MainWindow::onFileSelected);
     connect(ui->generateMetadataButton, &QPushButton::clicked, this, &MainWindow::onGenerateMetadataClicked);
-    connect(ui->saveSettingsButton, &QPushButton::clicked, this, &MainWindow::onSaveSettingsClicked);
+    connect(ui->settingsButton, &QPushButton::clicked, this, &MainWindow::onSettingsButtonClicked);
     connect(networkManager, &QNetworkAccessManager::finished, this, &MainWindow::onApiResponseReceived);
 }
 
@@ -76,12 +77,13 @@ void MainWindow::onFileSelected(const QModelIndex &index) {
 }
 
 // Сохранение настроек AI
-void MainWindow::onSaveSettingsClicked() {
-    // Сохраняем выбранного провайдера и ключ
-    currentAiProvider = ui->aiProviderComboBox->currentText();
-    currentApiKey = ui->apiKeyLineEdit->text();
-
-    QMessageBox::information(this, tr("Settings Saved"), tr("AI provider and API key have been saved."));
+void MainWindow::onSettingsButtonClicked() {
+    // Показываем диалог настроек
+    if (settingsDialog->exec() == QDialog::Accepted) {
+        currentAiProvider = settingsDialog->getAiProvider();
+        currentApiKey = settingsDialog->getApiKey();
+        QMessageBox::information(this, tr("Settings Saved"), tr("AI provider and API key have been updated."));
+    }
 }
 
 // Отправка изображения на сервер AI

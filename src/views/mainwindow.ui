@@ -153,63 +153,6 @@
      </layout>
     </item>
 
-    <!-- Настройки AI -->
-    <item>
-     <layout class="QVBoxLayout" name="aiSettingsLayout">
-      <item>
-       <widget class="QGroupBox" name="settingsGroupBox">
-        <property name="title">
-         <string>AI Settings</string>
-        </property>
-        <layout class="QVBoxLayout" name="settingsLayout">
-         <item>
-          <widget class="QLabel" name="providerLabel">
-           <property name="text">
-            <string>Select AI Provider:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="aiProviderComboBox">
-           <item>
-            <property name="text">
-             <string>Gemini AI</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>OpenAI</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="apiKeyLabel">
-           <property name="text">
-            <string>API Key:</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="apiKeyLineEdit">
-           <property name="placeholderText">
-            <string>Enter your API Key</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="saveSettingsButton">
-           <property name="text">
-            <string>Save Settings</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </item>
-
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar"/>

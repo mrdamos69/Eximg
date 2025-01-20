@@ -14,6 +14,7 @@
 #include <QLineEdit>
 #include <QPlainTextEdit>
 #include <QPushButton>
+#include "settingsdialog.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,7 +32,7 @@ private slots:
     void onBrowseFolderClicked();
     void onFileSelected(const QModelIndex &index);
     void onGenerateMetadataClicked();
-    void onSaveSettingsClicked();
+    void onSettingsButtonClicked();
     void sendImageToApi(const QString &filePath);
     void onApiResponseReceived(QNetworkReply *reply);
     void updateProgressBar(int value);
@@ -44,6 +45,8 @@ private:
 
     QString currentApiKey;          // Хранение текущего API-ключа
     QString currentAiProvider;      // Хранение текущего провайдера (Gemini AI или OpenAI)
+
+    SettingsDialog *settingsDialog; // Указатель на окно настроек
 };
 
 #endif // MAINWINDOW_H
