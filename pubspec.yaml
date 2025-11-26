@@ -1,0 +1,18 @@
+name: eximg
+description: A cross-platform photo editor sample with cropping, flipping, and filters.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  image_picker: ^1.0.8
+  image_editor_plus: ^2.10.2
+
+flutter:
+  uses-material-design: true
