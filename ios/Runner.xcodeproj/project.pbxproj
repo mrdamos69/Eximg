@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+archiveVersion = 1;
+classes = {};
+objectVersion = 54;
+objects = {
+
+/* Begin PBXBuildFile section */
+1D60589F0D05DD5A006BFB54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60589E0D05DD5A006BFB54 /* AppDelegate.swift */; };
+1D6058A20D05DD5A006BFB54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6058A00D05DD5A006BFB54 /* Main.storyboard */; };
+1D6058A50D05DD5A006BFB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D6058A40D05DD5A006BFB54 /* Assets.xcassets */; };
+1D6058A80D05DD5A006BFB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6058A60D05DD5A006BFB54 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+1D60589E0D05DD5A006BFB54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+1D6058A00D05DD5A006BFB54 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+1D6058A40D05DD5A006BFB54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+1D6058A60D05DD5A006BFB54 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+1D6058AA0D05DD5A006BFB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+1D6058AC0D05DD5A006BFB54 /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+1D6058AE0D05DD5A006BFB54 /* AppFrameworkInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AppFrameworkInfo.plist; path = Flutter/AppFrameworkInfo.plist; sourceTree = "<group>"; };
+1D6058B20D05DD5A006BFB54 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+1D6058A30D05DD5A006BFB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+1D6058A90D05DD5A006BFB54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+1D60589B0D05DD5A006BFB54 /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+1D60589C0D05DD5A006BFB54 = {
+isa = PBXGroup;
+children = (
+1D6058B20D05DD5A006BFB54 /* Runner.app */,
+1D6058B00D05DD5A006BFB54 /* Runner */,
+);
+indentWidth = 2;
+sourceTree = "<group>";
+tabWidth = 2;
+};
+1D6058B00D05DD5A006BFB54 /* Runner */ = {
+isa = PBXGroup;
+children = (
+1D60589E0D05DD5A006BFB54 /* AppDelegate.swift */,
+1D6058A00D05DD5A006BFB54 /* Main.storyboard */,
+1D6058A60D05DD5A006BFB54 /* LaunchScreen.storyboard */,
+1D6058A40D05DD5A006BFB54 /* Assets.xcassets */,
+1D6058AA0D05DD5A006BFB54 /* Info.plist */,
+1D6058AC0D05DD5A006BFB54 /* Runner.entitlements */,
+1D6058AE0D05DD5A006BFB54 /* AppFrameworkInfo.plist */,
+);
+path = Runner;
+sourceTree = "<group>";
+};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+1D60589A0D05DD5A006BFB54 /* Runner */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 1D6058C00D05DD5A006BFB54 /* Build configuration list for PBXNativeTarget "Runner" */;
+buildPhases = (
+1D60589B0D05DD5A006BFB54 /* Frameworks */,
+1D60589D0D05DD5A006BFB54 /* Sources */,
+1D6058A10D05DD5A006BFB54 /* Resources */,
+C0D1E2F50AA1234500000000 /* Generate App Icons */,
+1D6058B60D05DD5A006BFB54 /* Flutter */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = Runner;
+productName = Runner;
+productReference = 1D6058B20D05DD5A006BFB54 /* Runner.app */;
+productType = "com.apple.product-type.application";
+};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+1D60589D0D05DD5A006BFB55 /* Project object */ = {
+isa = PBXProject;
+attributes = {
+BuildIndependentTargetsInParallel = YES;
+LastUpgradeCheck = 1500;
+ORGANIZATIONNAME = "Example";
+TargetAttributes = {
+1D60589A0D05DD5A006BFB54 = {
+DevelopmentTeam = "";
+ProvisioningStyle = Automatic;
+};
+};
+};
+buildConfigurationList = 1D6058BA0D05DD5A006BFB54 /* Build configuration list for PBXProject "Runner" */;
+compatibilityVersion = "Xcode 14.0";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+);
+mainGroup = 1D60589C0D05DD5A006BFB54;
+productRefGroup = 1D60589C0D05DD5A006BFB54;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+1D60589A0D05DD5A006BFB54 /* Runner */,
+);
+};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+1D6058A10D05DD5A006BFB54 /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+1D6058A20D05DD5A006BFB54 /* Main.storyboard in Resources */,
+1D6058A50D05DD5A006BFB54 /* Assets.xcassets in Resources */,
+1D6058A80D05DD5A006BFB54 /* LaunchScreen.storyboard in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+C0D1E2F50AA1234500000000 /* Generate App Icons */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${PROJECT_DIR}/../tools/generate_app_icons.py",
+"${PROJECT_DIR}/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json",
+);
+name = "Generate App Icons";
+outputFileListPaths = (
+);
+outputPaths = (
+"${PROJECT_DIR}/Runner/Assets.xcassets/AppIcon.appiconset/Icon-1024.png",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "cd \"${PROJECT_DIR}/..\"\npython3 tools/generate_app_icons.py\n";
+};
+1D6058B60D05DD5A006BFB54 /* Flutter */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${FLUTTER_ROOT}/packages/flutter_tools/bin/xcode_backend.sh",
+);
+name = Flutter;
+outputFileListPaths = (
+);
+outputPaths = (
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "\"${FLUTTER_ROOT}/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+1D60589D0D05DD5A006BFB54 /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+1D60589F0D05DD5A006BFB54 /* AppDelegate.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+1D6058A00D05DD5A006BFB54 /* Main.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+1D6058A30D05DD5A006BFB54 /* Base */,
+);
+name = Main.storyboard;
+sourceTree = "<group>";
+};
+1D6058A60D05DD5A006BFB54 /* LaunchScreen.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+1D6058A90D05DD5A006BFB54 /* Base */,
+);
+name = LaunchScreen.storyboard;
+sourceTree = "<group>";
+};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+1D6058BC0D05DD5A006BFB54 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+ENABLE_BITCODE = NO;
+INFOPLIST_FILE = Runner/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.eximg;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+1D6058BD0D05DD5A006BFB54 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+ENABLE_BITCODE = NO;
+INFOPLIST_FILE = Runner/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.eximg;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
+1D6058BE0D05DD5A006BFB54 /* Profile */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+CURRENT_PROJECT_VERSION = 1;
+DEVELOPMENT_TEAM = "";
+ENABLE_BITCODE = NO;
+INFOPLIST_FILE = Runner/Info.plist;
+IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+PRODUCT_BUNDLE_IDENTIFIER = com.example.eximg;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 5.0;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Profile;
+};
+1D6058BF0D05DD5A006BFB54 /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+CLANG_ENABLE_MODULES = YES;
+ENABLE_BITCODE = NO;
+SWIFT_OBJC_BRIDGING_HEADER = "";
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+};
+name = Debug;
+};
+1D6058C10D05DD5A006BFB54 /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+CLANG_ENABLE_MODULES = YES;
+ENABLE_BITCODE = NO;
+};
+name = Release;
+};
+1D6058C20D05DD5A006BFB54 /* Profile */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+CLANG_ENABLE_MODULES = YES;
+ENABLE_BITCODE = NO;
+};
+name = Profile;
+};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+1D6058BA0D05DD5A006BFB54 /* Build configuration list for PBXProject "Runner" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+1D6058BF0D05DD5A006BFB54 /* Debug */,
+1D6058C10D05DD5A006BFB54 /* Release */,
+1D6058C20D05DD5A006BFB54 /* Profile */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+1D6058C00D05DD5A006BFB54 /* Build configuration list for PBXNativeTarget "Runner" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+1D6058BC0D05DD5A006BFB54 /* Debug */,
+1D6058BD0D05DD5A006BFB54 /* Release */,
+1D6058BE0D05DD5A006BFB54 /* Profile */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+/* End XCConfigurationList section */
+};
+rootObject = 1D60589D0D05DD5A006BFB55 /* Project object */;
+}

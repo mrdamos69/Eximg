@@ -1,0 +1,12 @@
+Pods/
+.pub-cache/
+.build/
+DerivedData/
+Flutter/Flutter.framework
+Flutter/Flutter.podspec
+Flutter/Flutter.xcconfig
+Flutter/Generated.xcconfig
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/

@@ -1,0 +1,9 @@
+gradle-wrapper.jar
+/.gradle
+/captures
+/build
+.metadata
+.idea
+.DS_Store
+/local.properties
+GeneratedPluginRegistrant.java
