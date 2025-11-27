@@ -36,6 +36,11 @@ class _EditorHomePageState extends State<EditorHomePage> {
   File? _imageFile;
   bool _isEditing = false;
 
+  void _clearImage() {
+    if (_isEditing) return;
+    setState(() => _imageFile = null);
+  }
+
   Future<void> _pickImage(ImageSource source) async {
     final picker = ImagePicker();
     final pickedFile = await picker.pickImage(source: source, imageQuality: 100);
@@ -59,7 +64,11 @@ class _EditorHomePageState extends State<EditorHomePage> {
       );
       if (result != null) {
         final editedFile = await _persistEditedImage(result);
+        if (!mounted) return;
         setState(() => _imageFile = editedFile);
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Изменения сохранены во временный файл')),
+        );
       }
     } finally {
       if (mounted) setState(() => _isEditing = false);
@@ -153,6 +162,12 @@ class _EditorHomePageState extends State<EditorHomePage> {
                   icon: const Icon(Icons.tune),
                   label: const Text('Открыть редактор'),
                 ),
+                if (_imageFile != null)
+                  OutlinedButton.icon(
+                    onPressed: !_isEditing ? _clearImage : null,
+                    icon: const Icon(Icons.delete_outline),
+                    label: const Text('Сбросить выбор'),
+                  ),
               ],
             ),
             const SizedBox(height: 16),
